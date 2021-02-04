@@ -66,6 +66,7 @@ img {
   font-weight: 400;
   color: #FFF;
   line-height: 1.4;
+  margin: 32px 0;
 }
 
 .paragrafo.p-footer {
@@ -193,9 +194,10 @@ img {
   justify-items: center;
   align-content: center;
   justify-content: center;
+  grid-gap: 30px;
 }
 
-.intro-titulos {
+.intro-texto {
   margin-top: 60px;
 }
 
@@ -250,6 +252,56 @@ img {
 /* História */
 .historia-bg {
   background: #4400CC;
+}
+
+.historia {
+  padding: 148px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-content: center;
+  grid-gap: 30px;
+}
+
+.historia-texto {
+  position: relative;
+  grid-column: 1;
+}
+
+.p-historia {
+  max-width: 550px;
+}
+
+.e-historia {
+  position: absolute;
+  right: 0;
+}
+
+.historia-imagem {
+  grid-column: 2;
+  align-self: baseline;
+}
+
+/* Tecnologia */
+.tecnologia-bg {
+  background: #1F1B26;
+}
+
+.tecnologia {
+  padding: 148px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-content: center;
+  grid-gap: 60px;
+}
+
+.tecnologia-texto {
+  grid-column: 2;
+}
+
+.tecnologia-imagem {
+  grid-column: 1;
 }
 
 
