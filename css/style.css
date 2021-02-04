@@ -188,6 +188,7 @@ img {
   margin-left: 32px;
 }
 
+
 /* Intro */
 .intro-bg {
   background: #6622FF;
@@ -602,6 +603,12 @@ img {
 @media (max-width: 799px) {
   .doacoes-imagem {
     margin-top: 60px;
+  }
+}
+
+@media (max-width: 680px) {
+  .redes-sociais {
+    display: none;
   }
 }
 
