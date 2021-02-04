@@ -57,7 +57,7 @@
           </blockquote>
         </div>
         <!-- intro imagem -->
-        <figure class="gd-imagem">
+        <figure class="intro-imagem">
           <img src="assets/gd-icons/gd-icon-intro.png" alt="Imagem da Gaming Developers">
         </figure>
       </div>
@@ -125,22 +125,34 @@
           <img src="assets/icons/faq-icon.svg" alt="Homem e mulher junto a um ponto de interrogação">
         </figure>
         <!-- faq texto -->
+        <h2 class="titulo wide-item t-faq">Perguntas Frequentes</h2>
         <div class="faq-texto">
-          <h2 class="titulo">Perguntas Frequentes</h2>
           <!-- pergunta 1 -->
-          <input type="checkbox" id="pergunta1" name="perguntas" class="faq-checkbox">
-          <label for="pergunta1" class="faq-pergunta">Como irei saber sobre as atualizações dos jogos?</label>
-          <div class="faq-resposta">Fique ligado na nossa plataforma, logo estaremos informando.</div>
+          <div class="faq-container">
+            <input type="checkbox" id="pergunta1" name="perguntas" class="faq-checkbox">
+            <label for="pergunta1">
+              <div class="faq-pergunta">Como irei saber sobre as atualizações dos jogos?</div>
+            </label>
+            <div class="faq-resposta"><p>Fique ligado na nossa plataforma, logo estaremos informando.</p></div>
+          </div>
           
           <!-- pergunta 2 -->
-          <input type="checkbox" id="pergunta2" name="perguntas" class="faq-checkbox">
-          <label for="pergunta2" class="faq-pergunta">Vocês ensinam a desenvolver jogos?</label>
-          <div class="faq-resposta">No momento não, mas futuramente podemos pensar nisso.</div>
+          <div class="faq-container">
+            <input type="checkbox" id="pergunta2" name="perguntas" class="faq-checkbox">
+            <label for="pergunta2">
+              <div class="faq-pergunta">Vocês ensinam a desenvolver jogos?</div>
+            </label>
+            <div class="faq-resposta"><p>No momento não, mas futuramente podemos pensar nisso.</p></div>
+          </div>
 
           <!-- pergunta 3 -->
-          <input type="checkbox" id="pergunta3" name="perguntas" class="faq-checkbox">
-          <label for="pergunta3" class="faq-pergunta">Tenho uma ideia de jogo, como faço para recrutar a equipe da Gaming Developers?</label>
-          <div class="faq-resposta">Através de nosso e-mail ou outros meios de contato.</div>
+          <div class="faq-container">
+            <input type="checkbox" id="pergunta3" name="perguntas" class="faq-checkbox">
+            <label for="pergunta3">
+              <div class="faq-pergunta">Tenho uma ideia de jogo, como faço para recrutar a equipe da Gaming Developers?</div>
+            </label>
+            <div class="faq-resposta"><p>Através de nosso e-mail ou outros meios de contato.</p></div>
+          </div>
         </div>  
       </div>
     </section>
@@ -150,12 +162,12 @@
   <section class="info-footer-bg">
     <div class="info-footer container">
       <!-- contato -->
-      <div class="contato-footer">
+      <div class="contato-footer item-footer">
         <h3 class="titulo t-footer">Contato</h3>
         <a href="#" class="e-mail" title="Mande um e-mail para Gaming Developers."><img src="assets/email.svg"> jsilva.gh21@gmail.com</a>
       </div>
       <!-- redes sociais -->
-      <div class="redes-sociais rs-footer">
+      <div class="redes-sociais rs-footer item-footer">
         <h3 class="titulo t-footer">Redes Sociais</h3>
         <ul>
           <li><a href="#"><img class="rs-icon rs-footer" src="assets/social/instagram.svg" alt="Instagram"></a></li>
@@ -164,7 +176,7 @@
         </ul>
       </div>
       <!-- páginas -->
-      <div class="paginas-footer">
+      <div class="paginas-footer item-footer">
         <h3 class="titulo t-footer">Páginas</h3>
         <ul>
           <li><a href="#">Home</a></li>
@@ -172,13 +184,13 @@
         </ul>
       </div>
       <!-- doação footer -->
-      <div class="doacao-footer">
+      <div class="doacao-footer item-footer">
         <h3 class="titulo t-footer">Doe</h3>
         <a href="#"><button class="botao-contribuir">Contribuir</button></a>
       </div>
-      <!-- gd ícone footer -->
-      <figure>
-        <img src="assets/gd-icons/gd-icon-footer.svg" alt="Gaming Developers Logo">
+      <!-- footer imagem -->
+      <figure class="footer-imagem item-footer">
+        <img src="assets/gd-icons/gd-icon-footer.png" alt="Gaming Developers Logo">
       </figure>
     </div>
   </section>

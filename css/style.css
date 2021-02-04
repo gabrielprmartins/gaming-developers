@@ -13,8 +13,9 @@ a {
   text-decoration: none;
 }
 
-body {
+html {
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
 }
 
 img {
@@ -31,23 +32,28 @@ img {
   padding: 0 20px;
 }
 
+/* wide item */
+.wide-item {
+  grid-column: 1/-1;
+}
+
 /* TEXTOS */
 /* títulos */
 .titulo {
   font-family: 'Work Sans', sans-serif;
-  font-size: 48px;
+  font-size: 3rem;
   color: #FFF;
   font-weight: 700;
   line-height: 1;
 }
 
 .titulo.t-inicial {
-  font-size: 52px;
+  font-size: 3.25rem;
 }
 
 .titulo.t-footer {
   font-family: 'Raleway', sans-serif;
-  font-size: 26px;
+  font-size: 1.625rem;
 }
 
 .titulo.titulo.t-footer:before {
@@ -62,7 +68,7 @@ img {
 /* parágrafos */
 .paragrafo {
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   color: #FFF;
   line-height: 1.4;
@@ -70,14 +76,14 @@ img {
 }
 
 .paragrafo.p-footer {
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 700;
 }
 
 /* botões */
 .e-mail {
   font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
   display: flex;
   align-items: flex-start;
@@ -94,7 +100,7 @@ img {
 
 .botao-contribuir {
   font-family: 'Raleway', sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 700;
   color: #322BC2;
   background: #FFF021;
@@ -172,7 +178,7 @@ img {
 
 .menu ul li a {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #FFF;
   font-weight: 700;
   padding: 10px;
@@ -203,7 +209,7 @@ img {
 
 .subtitulo-intro {
   font-family: 'Raleway', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #FFF;
   font-weight: 700;
   margin: 32px 0;
@@ -221,14 +227,14 @@ img {
 
 .t-fundador {
   font-family: 'Work Sans', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #FFF;
 }
 
 .p-fundador {
   font-family: 'Raleway', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem;
   font-weight: 400;
   color: #FFF;
   margin-top: 8px;
@@ -244,7 +250,7 @@ img {
 .quote p {
   font-family: 'Raleway', sans-serif;
   color: #FFF;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: italic;
   padding-left: 16px;
 }
@@ -265,7 +271,6 @@ img {
 
 .historia-texto {
   position: relative;
-  grid-column: 1;
 }
 
 .p-historia {
@@ -278,7 +283,6 @@ img {
 }
 
 .historia-imagem {
-  grid-column: 2;
   align-self: baseline;
 }
 
@@ -297,16 +301,8 @@ img {
   grid-gap: 60px;
 }
 
-.tecnologia-texto {
-  grid-column: 2;
-}
-
 .t-paragrafo {
   max-width: 530px;
-}
-
-.tecnologia-imagem {
-  grid-column: 1;
 }
 
 /* Doações */
@@ -323,7 +319,6 @@ img {
 }
 
 .doacoes-texto {
-  grid-column: 1;
   margin-right: 60px;
 }
 
@@ -337,7 +332,7 @@ img {
 
 .lista-doacoes li {
   font-family: 'Raleway', sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
   color: #FFF;
 }
@@ -351,8 +346,208 @@ img {
   margin-right: 12px;
 }
 
-.doacoes-imagem {
-  grid-column: 2;
+/* Perguntas frequentes */
+.faq-bg {
+  background: #4940FF;
+}
+
+.faq {
+  padding: 148px 20px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-content: center;
+  align-items: start;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 32px;
+}
+
+.faq-texto {
+  margin-right: 60px;
+}
+
+.faq-container + .faq-container {
+  margin-top: 8px;
+}
+
+.t-faq {
+  grid-row: 1;
+  margin-bottom: 32px;
+}
+
+.faq-checkbox {
+  display: none;
+}
+
+.faq-pergunta {
+  background: #322BC2;
+  padding: 20px 32px;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 20px;
+  grid-gap: 18px;
+  transition: ease .4s;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.faq-pergunta::after {
+  content: '';
+  display: inline-block;
+  background: url(/assets/faq-seta.svg) center no-repeat;
+  width: 100%;
+  transition: all .4s;
+}
+
+.faq-pergunta:hover {
+  background: rgb(50,43,194,.5); 
+}
+
+.faq-container {
+  position: relative;
+}
+
+.faq-resposta {
+  background: #4139E5;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: ease .4s;
+  padding: 0 32px;
+}
+
+.faq-resposta p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #FFF;
+  display: none;
+}
+
+.faq-checkbox:checked ~ .faq-resposta {
+  opacity: 1;
+  padding: 20px 32px;
+  margin: 2px 0px 8px;
+}
+
+.faq-checkbox:checked ~ .faq-resposta p {
+  display: block;
+}
+
+.faq-checkbox:checked ~ label .faq-pergunta::after {
+  transform: rotate(180deg);
+}
+
+/* Footer info */
+.info-footer-bg {
+  background: #1F1B26;
+}
+
+.info-footer {
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.item-footer {
+  margin: 32px 32px;
+}
+
+.t-footer {
+  margin-bottom: 32px;
+}
+
+.paginas-footer ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.paginas-footer ul li + li {
+  margin-top: 16px;
+}
+
+.paginas-footer ul li:before {
+  content: '';
+  display: inline-block;
+  background: #FFF021;
+  width: 8px;
+  height: 8px;
+  margin-right: 12px;
+  position: relative;
+  bottom: 2px;
+}
+
+.paginas-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-imagem {
+  width: 150px;
+}
+
+/* Footer  */
+.footer-bg {
+  background: #3E364D;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* RESPONSIVO */
+@media (max-width: 893px) {
+  /* Grid */
+  .intro, .historia, .tecnologia, .faq  {
+    grid-template-columns: 1fr;
+  }
+
+  /* Textos */
+  /* títulos */
+  .titulo {
+    font-size: 2.4rem;
+  }
+
+  .titulo.t-inicial {
+    font-size: 2.6em;
+  }
+
+  .titulo.t-footer {
+    font-size: 1.4em;
+  }
+
+  .subtitulo-intro {
+    font-size: 1.125em;
+  }
+
+  /* parágrafos */
+  .paragrafo, .quote p {
+    font-size: 1em;
+  }
+
+  /* Imagens */
+  .intro-imagem,
+  .historia-imagem,
+  .tecnologia-imagem,
+  .doacoes-imagem,
+  .faq-imagem {
+    max-width: 300px;
+  }
+
+  /* Estrutura */
+  
+
 }
 
 
