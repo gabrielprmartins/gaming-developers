@@ -17,11 +17,18 @@ body {
   scroll-behavior: smooth;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* CONFIGURAÇÕES INICIAIS */
 /* container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 20px;
 }
 
 /* TEXTOS */
@@ -102,14 +109,148 @@ body {
   color: #FFF021;
 }
 
+/* redes sociais */
+.redes-sociais ul {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+
+.redes-sociais ul li + li {
+  margin-left: 40px;
+}
+
+.redes-sociais ul li a {
+  transition: ease .4s;
+}
+
+/* redes sociais ícones */
+.rs-icon {
+  transition: ease .1s;
+}
+
+/* redes sociais header */
+.rs-icon.rs-header:hover {
+  filter: sepia(100%) saturate(1370%) hue-rotate(333deg) brightness(106%) contrast(105%);
+}
+
+/* redes sociais footer */
+.rs-icon.rs-footer {
+  filter: sepia(100%) saturate(1370%) hue-rotate(333deg) brightness(106%) contrast(105%);
+}
+
+.rs-icon.rs-footer:hover {
+  filter: sepia(8%) saturate(829%) hue-rotate(160deg) brightness(109%) contrast(102%);
+}
+
 /* ESTRUTURA */
-/* terminar */
+/* Header */
+.header-bg {
+  background: #6622FF;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
 
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
 
+/* menu */
+.menu ul {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
 
+.menu ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 700;
+  padding: 10px;
+}
 
+.menu ul li + li {
+  margin-left: 32px;
+}
 
+/* Intro */
+.intro-bg {
+  background: #6622FF;
+}
 
+.intro {
+  padding: 148px 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.intro-titulos {
+  margin-top: 60px;
+}
+
+.subtitulo-intro {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  color: #FFF;
+  font-weight: 700;
+  margin: 32px 0;
+}
+
+/* fundador */
+.fundador {
+  display: flex;
+  align-items: center;
+}
+
+.i-fundador {
+  margin-right: 16px;
+}
+
+.t-fundador {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.p-fundador {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 8px;
+}
+
+/* quote */
+.quote {
+  margin-top: 32px;
+  border-left: 4px solid #FFF021;
+  max-width: 450px;;
+}
+
+.quote p {
+  font-family: 'Raleway', sans-serif;
+  color: #FFF;
+  font-size: 18px;
+  font-style: italic;
+  padding-left: 16px;
+}
+
+/* História */
+.historia-bg {
+  background: #4400CC;
+}
 
 
 /* fontes
