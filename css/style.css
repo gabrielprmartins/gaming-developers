@@ -402,6 +402,7 @@ img {
 
 .faq-seta {
   transition: all .4s;
+  display: inline-block;
 }
 
 .faq-pergunta:hover {
