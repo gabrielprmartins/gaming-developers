@@ -167,7 +167,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  transition: all .4s;
+  transition: all .2s;
 }
 
 /* menu */
@@ -680,7 +680,7 @@ img {
 }
 
 .logo {
-  transition: all .4s;
+  transition: all .2s;
 }
 
 [data-menu="header"].animate .logo {
