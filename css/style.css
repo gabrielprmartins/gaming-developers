@@ -611,6 +611,14 @@ img {
   .redes-sociais {
     display: none;
   }
+
+  .menu ul li + li {
+    margin-left: 16px;
+  }
+
+  .menu ul li a {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 643px) {
