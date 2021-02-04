@@ -606,7 +606,7 @@ img {
 }
 
 @media (max-width: 680px) {
-  .redes-sociais {
+  .redes-sociais.redes-header {
     display: none;
   }
 
@@ -621,11 +621,19 @@ img {
 
 @media (max-width: 643px) {
   .item-footer {
-    margin: 20px 0;
+    margin: 0px;
+  }
+
+  .item-footer + .item-footer {
+    margin: 32px 0px 0px;
   }
 
   .info-footer {
     flex-direction: column;
+  }
+
+  .titulo.t-footer {
+    margin-bottom: 18px;
   }
 }
 
