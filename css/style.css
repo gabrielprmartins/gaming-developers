@@ -153,12 +153,12 @@ img {
 /* ESTRUTURA */
 /* Header */
 .header-bg {
-  background: #6622FF;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 999;
+  transition: ease .4s;
 }
 
 .header {
@@ -167,6 +167,7 @@ img {
   align-items: center;
   justify-content: space-between;
   padding: 10px;
+  transition: all .4s;
 }
 
 /* menu */
@@ -652,9 +653,25 @@ img {
   .paragrafo {
     font-size: 0.9rem;
   }
-
 }
 
+/* ANIMAÇÕES */
+[data-menu="header-bg"].animate {
+  background: #570DFF;
+  box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+}
+
+[data-menu="header"].animate {
+  padding: 0;
+}
+
+.logo {
+  transition: all .4s;
+}
+
+[data-menu="header"].animate .logo {
+  transform: scale(0.7);
+}
 
 /* fontes
 font-family: 'Raleway', sans-serif;
