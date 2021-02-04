@@ -1,0 +1,679 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* CONFIGURAÇÕES INICIAIS */
+/* container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* wide item */
+.wide-item {
+  grid-column: 1/-1;
+}
+
+/* TEXTOS */
+/* títulos */
+.titulo {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 3rem;
+  color: #FFF;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.titulo.t-inicial {
+  font-size: 3.25rem;
+}
+
+.titulo.t-footer {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.625rem;
+}
+
+.titulo.titulo.t-footer:before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 18px;
+  background: #FFF;
+  margin-right: 8px;
+}
+
+/* parágrafos */
+.paragrafo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #FFF;
+  line-height: 1.4;
+  margin: 32px 0;
+}
+
+.paragrafo.p-footer {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+/* botões */
+.e-mail {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  color: #FFF;
+}
+
+.e-mail img {
+  margin-right: 16px;
+}
+
+.e-mail:hover {
+  text-decoration: underline; 
+}
+
+.botao-contribuir {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #322BC2;
+  background: #FFF021;
+  border-radius: 4px;
+  border: 2px solid #FFF021;
+  padding: 14px 42px;
+  cursor: pointer;
+  transition: ease .4s;
+}
+
+.botao-contribuir:hover {
+  background: transparent;
+  color: #FFF021;
+}
+
+/* redes sociais */
+.redes-sociais ul {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+
+.redes-sociais ul li + li {
+  margin-left: 40px;
+}
+
+.redes-sociais ul li a {
+  transition: ease .4s;
+}
+
+/* redes sociais ícones */
+.rs-icon {
+  transition: ease .1s;
+}
+
+/* redes sociais header */
+.rs-icon.rs-header:hover {
+  filter: sepia(100%) saturate(1370%) hue-rotate(333deg) brightness(106%) contrast(105%);
+}
+
+/* redes sociais footer */
+.rs-icon.rs-footer {
+  filter: sepia(100%) saturate(1370%) hue-rotate(333deg) brightness(106%) contrast(105%);
+}
+
+.rs-icon.rs-footer:hover {
+  filter: sepia(8%) saturate(829%) hue-rotate(160deg) brightness(109%) contrast(102%);
+}
+
+/* ESTRUTURA */
+/* Header */
+.header-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  transition: ease .4s;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  transition: all .4s;
+}
+
+/* menu */
+.menu ul {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+}
+
+.menu ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem;
+  color: #FFF;
+  font-weight: 700;
+  padding: 10px;
+}
+
+.menu ul li + li {
+  margin-left: 32px;
+}
+
+
+/* Intro */
+.intro-bg {
+  background: #6622FF;
+}
+
+.intro {
+  padding: 148px 20px 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-content: center;
+  justify-content: center;
+  grid-gap: 32px;
+}
+
+.intro-texto {
+  margin-top: 60px;
+}
+
+.subtitulo-intro {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem;
+  color: #FFF;
+  font-weight: 700;
+  margin: 32px 0;
+}
+
+/* fundador */
+.fundador {
+  display: flex;
+  align-items: center;
+}
+
+.i-fundador {
+  margin-right: 16px;
+}
+
+.t-fundador {
+  font-family: 'Work Sans', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.p-fundador {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #FFF;
+  margin-top: 8px;
+}
+
+/* quote */
+.quote {
+  margin-top: 32px;
+  border-left: 4px solid #FFF021;
+  max-width: 450px;;
+}
+
+.quote p {
+  font-family: 'Raleway', sans-serif;
+  color: #FFF;
+  font-size: 1.125rem;
+  font-style: italic;
+  padding-left: 16px;
+}
+
+/* História */
+.historia-bg {
+  background: #4400CC;
+}
+
+.historia {
+  padding: 148px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-content: center;
+  grid-gap: 32px;
+}
+
+.historia-texto {
+  position: relative;
+}
+
+.p-historia {
+  max-width: 550px;
+}
+
+.e-historia {
+  position: absolute;
+  right: 0;
+}
+
+.historia-imagem {
+  align-self: baseline;
+}
+
+/* Tecnologia */
+.tecnologia-bg {
+  background: #1F1B26;
+}
+
+.tecnologia {
+  padding: 148px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  grid-gap: 60px;
+}
+
+.t-paragrafo {
+  max-width: 530px;
+}
+
+/* Doações */
+.doacoes-bg {
+  background: #322BC2;
+}
+
+.doacoes {
+  padding: 148px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.doacoes-texto {
+  margin-right: 60px;
+}
+
+.d-paragrafo {
+  max-width: 290px;
+}
+
+.lista-doacoes {
+  margin: 32px 0;
+}
+
+.lista-doacoes li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.lista-doacoes li + li {
+  margin-top: 16px;
+}
+
+.lista-doacoes li img {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+/* Perguntas frequentes */
+.faq-bg {
+  background: #4940FF;
+}
+
+.faq {
+  padding: 148px 20px;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  justify-content: center;
+  align-items: start;
+  align-content: center;
+  justify-items: center;
+  grid-gap: 32px;
+}
+
+.faq-texto {
+  margin-right: 60px;
+}
+
+.faq-container + .faq-container {
+  margin-top: 8px;
+}
+
+.t-faq {
+  grid-row: 1;
+  margin-bottom: 32px;
+}
+
+.faq-checkbox {
+  display: none;
+}
+
+.faq-pergunta {
+  background: #322BC2;
+  padding: 20px 32px;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 20px;
+  grid-gap: 18px;
+  transition: ease .4s;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  color: #FFF;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.faq-pergunta::after {
+  content: '';
+  display: inline-block;
+  background: url(/assets/faq-seta.svg) center no-repeat;
+  width: 100%;
+  transition: all .4s;
+}
+
+.faq-pergunta:hover {
+  background: rgb(50,43,194,.5); 
+}
+
+.faq-container {
+  position: relative;
+}
+
+.faq-resposta {
+  background: #4139E5;
+  border-radius: 4px;
+  width: 100%;
+  height: auto;
+  opacity: 0;
+  transition: ease .4s;
+  padding: 0 32px;
+}
+
+.faq-resposta p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #FFF;
+  display: none;
+}
+
+.faq-checkbox:checked ~ .faq-resposta {
+  opacity: 1;
+  padding: 20px 32px;
+  margin: 2px 0px 8px;
+}
+
+.faq-checkbox:checked ~ .faq-resposta p {
+  display: block;
+}
+
+.faq-checkbox:checked ~ label .faq-pergunta::after {
+  transform: rotate(180deg);
+}
+
+/* Footer info */
+.info-footer-bg {
+  background: #1F1B26;
+}
+
+.info-footer {
+  padding: 60px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.item-footer {
+  margin: 32px;
+}
+
+.t-footer {
+  margin-bottom: 32px;
+}
+
+.paginas-footer ul li a {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  color: #FFF;
+  font-weight: 400;
+}
+
+.paginas-footer ul li + li {
+  margin-top: 16px;
+}
+
+.paginas-footer ul li:before {
+  content: '';
+  display: inline-block;
+  background: #FFF021;
+  width: 8px;
+  height: 8px;
+  margin-right: 12px;
+  position: relative;
+  bottom: 2px;
+}
+
+.paginas-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-imagem {
+  width: 150px;
+}
+
+/* Footer  */
+.footer-bg {
+  background: #3E364D;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* RESPONSIVO */
+@media (max-width: 893px) {
+  /* Grid */
+  .intro, .historia, .tecnologia, .faq  {
+    grid-template-columns: 1fr;
+  }
+
+  /* Textos */
+  /* títulos */
+  .titulo {
+    font-size: 2.4rem;
+  }
+
+  .titulo.t-inicial {
+    font-size: 2.6rem;
+  }
+
+  .titulo.t-footer {
+    font-size: 1.4rem;
+  }
+
+  .subtitulo-intro {
+    font-size: 1.125rem;
+  }
+
+  /* parágrafos */
+  .paragrafo, .quote p {
+    font-size: 1em;
+  }
+
+  .paragrafo.p-footer {
+    font-size: 1rem;
+    margin: 0px;
+    padding: 10px 20px;
+  }
+
+  .d-paragrafo {
+    max-width: 400px;
+  }
+
+  /* Imagens */
+  .intro-imagem,
+  .historia-imagem,
+  .tecnologia-imagem,
+  .doacoes-imagem,
+  .faq-imagem {
+    max-width: 300px;
+  }
+
+  /* Estrutura */
+  .historia,
+  .tecnologia,
+  .doacoes,
+  .faq {
+    padding: 60px 20px;
+  }
+
+  .intro {
+    padding: 80px 20px 30px;
+  }
+
+  .historia {
+    grid-gap: 80px;
+  }
+
+  .tecnologia {
+    grid-gap: 32px;
+  }
+
+  .lista-doacoes li {
+    font-size: 1rem;
+  }
+
+  .faq-pergunta {
+    font-size: 1.275rem;
+  }
+
+  .faq-resposta p {
+    font-size: 0.875rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px
+  }
+
+  /*  
+  consertar imagem doações. faq titulo, titulos, menu 
+  */
+
+}
+
+@media (max-width: 799px) {
+  .doacoes-imagem {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 680px) {
+  .redes-sociais {
+    display: none;
+  }
+}
+
+@media (max-width: 643px) {
+  .item-footer {
+    margin: 20px 0;
+  }
+
+  .info-footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 543px) {
+  .faq-pergunta {
+    font-size: 1rem;
+  }
+  
+  .faq-resposta p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .titulo.t-inicial {
+    font-size: 2.275rem;
+  }
+
+  .titulo.t-footer {
+    font-size: 1.275rem;
+  }
+
+  .subtitulo-intro {
+    font-size: 1.125rem;
+  }
+
+  .paragrafo {
+    font-size: 0.9rem;
+  }
+}
+
+/* ANIMAÇÕES */
+[data-menu="header-bg"].animate {
+  background: rgb(87,13,255,.9);
+  box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+}
+
+[data-menu="header"].animate {
+  padding: 0;
+}
+
+.logo {
+  transition: all .4s;
+}
+
+[data-menu="header"].animate .logo {
+  transform: scale(0.7);
+}
+
+/* fontes
+font-family: 'Raleway', sans-serif;
+font-family: 'Work Sans', sans-serif;
+*/
