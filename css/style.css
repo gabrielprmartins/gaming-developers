@@ -100,7 +100,7 @@ img {
   background: #FFF021;
   border-radius: 4px;
   border: 2px solid #FFF021;
-  padding: 10px 32px;
+  padding: 14px 42px;
   cursor: pointer;
   transition: ease .4s;
 }
@@ -194,7 +194,7 @@ img {
   justify-items: center;
   align-content: center;
   justify-content: center;
-  grid-gap: 30px;
+  grid-gap: 32px;
 }
 
 .intro-texto {
@@ -260,7 +260,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-content: center;
-  grid-gap: 30px;
+  grid-gap: 32px;
 }
 
 .historia-texto {
@@ -293,6 +293,7 @@ img {
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
   align-content: center;
+  align-items: center;
   grid-gap: 60px;
 }
 
@@ -300,8 +301,58 @@ img {
   grid-column: 2;
 }
 
+.t-paragrafo {
+  max-width: 530px;
+}
+
 .tecnologia-imagem {
   grid-column: 1;
+}
+
+/* Doações */
+.doacoes-bg {
+  background: #322BC2;
+}
+
+.doacoes {
+  padding: 148px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.doacoes-texto {
+  grid-column: 1;
+  margin-right: 60px;
+}
+
+.d-paragrafo {
+  max-width: 290px;
+}
+
+.lista-doacoes {
+  margin: 32px 0;
+}
+
+.lista-doacoes li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+.lista-doacoes li + li {
+  margin-top: 16px;
+}
+
+.lista-doacoes li img {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.doacoes-imagem {
+  grid-column: 2;
 }
 
 
