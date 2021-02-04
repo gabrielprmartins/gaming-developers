@@ -459,7 +459,7 @@ img {
 }
 
 .item-footer {
-  margin: 32px 32px;
+  margin: 32px;
 }
 
 .t-footer {
@@ -520,20 +520,30 @@ img {
   }
 
   .titulo.t-inicial {
-    font-size: 2.6em;
+    font-size: 2.6rem;
   }
 
   .titulo.t-footer {
-    font-size: 1.4em;
+    font-size: 1.4rem;
   }
 
   .subtitulo-intro {
-    font-size: 1.125em;
+    font-size: 1.125rem;
   }
 
   /* parágrafos */
   .paragrafo, .quote p {
     font-size: 1em;
+  }
+
+  .paragrafo.p-footer {
+    font-size: 1rem;
+    margin: 0px;
+    padding: 10px 20px;
+  }
+
+  .d-paragrafo {
+    max-width: 400px;
   }
 
   /* Imagens */
@@ -546,7 +556,95 @@ img {
   }
 
   /* Estrutura */
+  .historia,
+  .tecnologia,
+  .doacoes,
+  .faq {
+    padding: 60px 20px;
+  }
+
+  .intro {
+    padding: 80px 20px 30px;
+  }
+
+  .historia {
+    grid-gap: 80px;
+  }
+
+  .tecnologia {
+    grid-gap: 32px;
+  }
+
+  .lista-doacoes li {
+    font-size: 1rem;
+  }
+
+  .faq-pergunta {
+    font-size: 1.275rem;
+  }
+
+  .faq-resposta p {
+    font-size: 0.875rem;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px
+  }
+
+  /*  
+  consertar imagem doações. faq titulo, titulos, menu 
+  */
+
+}
+
+@media (max-width: 799px) {
+  .doacoes-imagem {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 643px) {
+  .item-footer {
+    margin: 20px 0;
+  }
+
+  .info-footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 543px) {
+  .faq-pergunta {
+    font-size: 1rem;
+  }
   
+  .faq-resposta p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .titulo.t-inicial {
+    font-size: 2.275rem;
+  }
+
+  .titulo.t-footer {
+    font-size: 1.275rem;
+  }
+
+  .subtitulo-intro {
+    font-size: 1.125rem;
+  }
+
+  .paragrafo {
+    font-size: 0.9rem;
+  }
 
 }
 
