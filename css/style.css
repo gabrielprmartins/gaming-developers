@@ -391,6 +391,7 @@ img {
   display: grid;
   grid-template-columns: auto 20px;
   grid-gap: 18px;
+  align-items: center;
   transition: ease .4s;
   font-family: 'Raleway', sans-serif;
   font-size: 1.5rem;
@@ -399,11 +400,7 @@ img {
   cursor: pointer;
 }
 
-.faq-pergunta::after {
-  content: '';
-  display: inline-block;
-  background: url(/assets/faq-seta.svg) center no-repeat;
-  width: 100%;
+.faq-seta {
   transition: all .4s;
 }
 
@@ -443,7 +440,7 @@ img {
   display: block;
 }
 
-.faq-checkbox:checked ~ label .faq-pergunta::after {
+.faq-checkbox:checked ~ label .faq-pergunta .faq-seta {
   transform: rotate(180deg);
 }
 
