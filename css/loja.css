@@ -1,0 +1,24 @@
+/* ESTRUTURA */
+/* vazio */
+.vazio-bg {
+  background: #4400CC;
+}
+
+.vazio {
+  padding: 168px 20px 148px;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.titulo.t-vazio {
+  margin-bottom: 60px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 893px) {
+  .vazio {
+    padding: 148px 20px 30px;
+  }
+}
