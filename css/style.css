@@ -208,7 +208,7 @@ img {
   opacity: 0;
 }
 
-.menu ul li:hover:after,.menu ul li.menu-ativo:after {
+.menu ul li:hover:after, .menu ul li.menu-ativo:after {
   opacity: 1;
   transform: translate3d(10px,0,0);
 }
