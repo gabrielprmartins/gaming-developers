@@ -183,11 +183,40 @@ img {
   color: #FFF;
   font-weight: 700;
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .menu ul li + li {
   margin-left: 32px;
 }
+
+.menu ul li a img {
+  display: inline-block;
+  margin-right: 12px;
+  transition: ease .1s;
+}
+
+.menu ul li:after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 4px;
+  background: #FFF021;
+  transition: all .4s;
+  opacity: 0;
+}
+
+.menu ul li:hover:after {
+  opacity: 1;
+  transform: translate3d(10px,0,0);
+}
+
+.menu ul li a:hover img {
+  filter: sepia(100%) saturate(1370%) hue-rotate(333deg) brightness(106%) contrast(105%);
+}
+
 
 
 /* Intro */
