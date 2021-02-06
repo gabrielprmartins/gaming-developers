@@ -71,7 +71,7 @@
         <div class="historia-texto">
           <h2 class="titulo">Nossa História</h2>
           <p class="paragrafo p-historia">Sou um jovem empreendedor e desenvolvedor de games, com uma ideia revolucionária, a qual acredito que contribuirá para o desenvolvimento do mercado. Oferecemos suporte a todos que tem interesse em desenvolver seu próprio jogo, ou empresa relacionada ao mesmo, inteligentes para empresas de todos os tamanhos e nos orgulhamos do nosso serviço excepcional. Na Gaming Developers, acreditamos que o conhecimento e a ousadia tecnológica podem levar sua empresa ou seu jogo, ao sucesso. Entre em contato para mais informações.</p>
-          <a href="#" class="e-mail e-historia" title="Mande um e-mail para Gaming Developers."><img src="assets/email.svg"> jsilva.gh21@gmail.com</a>
+          <span class="e-mail e-historia" title="Mande um e-mail para Gaming Developers."><img src="assets/email.svg"> jsilva.gh21@gmail.com</span>
         </div>
         <!-- história imagem -->
         <figure class="historia-imagem">
@@ -166,7 +166,7 @@
       <!-- contato -->
       <div class="contato-footer item-footer">
         <h3 class="titulo t-footer">Contato</h3>
-        <a href="#" class="e-mail" title="Mande um e-mail para Gaming Developers."><img src="assets/email.svg"> jsilva.gh21@gmail.com</a>
+        <span class="e-mail" title="Mande um e-mail para Gaming Developers."><img src="assets/email.svg"> jsilva.gh21@gmail.com</span>
       </div>
       <!-- redes sociais -->
       <div class="redes-sociais rs-footer item-footer">
@@ -201,6 +201,48 @@
       <p class="paragrafo p-footer">&copy; Copyright 2021 Gaming Developers - Todos direitos reservados</p>
     </div>
   </footer>
+
+  <div id="modal-contato" class="modal-container">
+    <div class="modal">
+      <h3 class="titulo t-modal">Mande um e-mail para Gaming Developers</h3>
+      <form class="form-modal">
+        <label for="nome" class="label">Nome</label>
+        <input id="nome" type="text" class="input">
+        <label for="email" class="label">E-mail</label>
+        <input id="email" type="text" class="input">
+        
+        <label for="mensagem" class="label">Mensagem</label>
+        <textarea id="mensagem" rows="8" class="textarea"></textarea>
+    
+        <div class="btn-acoes">
+          <button class="botao-contribuir btn-enviar">Enviar</button>
+          <span class="botao-contribuir btn-cancelar" id="btn-cancelar">Cancelar</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!--
+  <form action="enviar.php" method="post" name="form" class="formphp">
+    <label for="nome">Nome</label>
+    <input id="nome" name="nome" type="text">
+    <label for="email">E-mail</label>
+    <input id="email" name="email" type="text">
+    <label for="telefone">Telefone</label>
+    <input id="telefone" name="telefone" type="text">
+
+    <label class="nao-aparece">Se você não é um robô, deixe em branco.</label>
+    <input type="text" class="nao-aparece" name="leaveblank">
+    <label class="nao-aparece">Se você não é um robô, não mude este campo.</label>
+    <input type="text" class="nao-aparece" name="dontchange" value="http://" >
+
+    <label for="mensagem">Mensagem</label>
+    <textarea name="mensagem" id="mensagem"></textarea>
+
+    <button id="enviar" name="enviar" type="submit">Enviar</button>
+  </form>
+  -->
 
   <script src="js/script.js"></script>
 </body>

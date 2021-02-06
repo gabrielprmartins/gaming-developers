@@ -88,6 +88,7 @@ img {
   display: flex;
   align-items: flex-start;
   color: #FFF;
+  cursor: pointer;
 }
 
 .e-mail img {
@@ -114,6 +115,31 @@ img {
 .botao-contribuir:hover {
   background: transparent;
   color: #FFF021;
+}
+
+/* Labels e Inputs */
+.label {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color:#FFF;
+}
+
+.input, .textarea {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.875rem;
+  color: #FFF;
+  background: transparent;
+  border: 2px solid #FFF021;
+  padding: 10px 12px;
+  border-radius: 4px;
+  transition: ease .4s;
+  resize: none;
+}
+
+.input:focus, .input:hover, .textarea:focus, .textarea:hover {
+  border-color: #FFF;
+  box-shadow: 0px 0px 18px 0px rgba(255,255,255,.2);
 }
 
 /* redes sociais */
@@ -534,6 +560,110 @@ img {
   display: flex;
   justify-content: center;
 }
+
+/* Modal de contato */
+.modal-container {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.modal {
+  background: #5750E5;
+  width: 40%;
+  padding: 42px;
+  border-radius: 4px;
+}
+
+@media (max-width: 893px) {
+  .modal {
+    width: 70%;
+  }
+
+  .titulo.t-modal {
+    font-size: 1.625rem;
+  }
+
+}
+
+@media (max-width: 450px) {
+  .btn-cancelar, .btn-enviar {
+    padding: 10px 16px;
+    font-size: 0.875rem;
+  }
+
+  .modal {
+    width: 80%;
+    padding: 32px 20px;
+  }
+
+  .titulo.t-modal {
+    font-size: 1.25rem;
+  }
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0,60px,0);
+  }
+
+  do {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+.modal-container.mostrar {
+  display: flex;
+}
+
+.mostrar .modal {
+  animation: modal .3s;
+}
+
+.form-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-modal label {
+  margin: 16px 0 8px;
+}
+
+.form-modal .btn-acoes {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-acoes button + span {
+  margin-left: 20px;
+}
+
+.btn-cancelar {
+  background: transparent;
+  color: #FFF021;
+}
+
+.btn-cancelar:hover {
+  background: #FFF021;
+  color: #322BC2;
+}
+
+.t-modal {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
 
 /* RESPONSIVO */
 @media (max-width: 893px) {

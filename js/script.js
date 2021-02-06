@@ -52,3 +52,23 @@ if(target.length || targetMenu.length) {
     menuAnime();
   }, 100));
 }
+
+// Modal 
+function iniciaModal(modalID) {
+  const modal = document.getElementById(modalID);
+  modal.classList.add('mostrar');
+  modal.addEventListener('click', function(e) {
+    if(e.target.id === modalID || e.target.id === "btn-cancelar") {
+      modal.classList.remove('mostrar');
+    }
+  })
+}
+
+const email = document.querySelectorAll('.e-mail');
+if (email.length) {
+  for(let i = 0; i < email.length; i++) {
+    email[i].addEventListener('click', function() {
+      iniciaModal('modal-contato');
+    })
+  }
+}
