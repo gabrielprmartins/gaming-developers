@@ -24,6 +24,15 @@ img {
   height: auto;
 }
 
+::-moz-selection{
+  background:#834DFF;
+  color:#FFF;
+  }
+  ::selection {
+  background:#834DFF;
+  color:#FFF;
+  }
+
 /* CONFIGURAÇÕES INICIAIS */
 /* container */
 .container {
@@ -500,6 +509,30 @@ img {
   transform: rotate(180deg);
 }
 
+/* Faça Parte */
+.faca-parte-bg {
+  background: #4400CC;
+}
+
+.faca-parte {
+  padding: 148px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  justify-content: center;
+  justify-items: center;
+  grid-gap: 32px;
+}
+
+.t-faca-parte {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.p-faca-parte {
+  max-width: 510px;
+}
+
 /* Footer info */
 .info-footer-bg {
   background: #1F1B26;
@@ -668,7 +701,7 @@ img {
 /* RESPONSIVO */
 @media (max-width: 893px) {
   /* Grid */
-  .intro, .historia, .tecnologia, .faq  {
+  .intro, .historia, .tecnologia, .faq, .faca-parte  {
     grid-template-columns: 1fr;
   }
 
@@ -680,6 +713,10 @@ img {
 
   .titulo.t-inicial {
     font-size: 2.6rem;
+  }
+
+  .t-faca-parte {
+    margin-bottom: 0px;
   }
 
   .titulo.t-footer {
@@ -710,7 +747,8 @@ img {
   .historia-imagem,
   .tecnologia-imagem,
   .doacoes-imagem,
-  .faq-imagem {
+  .faq-imagem,
+  .faca-parte-imagem {
     max-width: 300px;
   }
 
@@ -718,7 +756,8 @@ img {
   .historia,
   .tecnologia,
   .doacoes,
-  .faq {
+  .faq,
+  .faca-parte {
     padding: 60px 20px;
   }
 
@@ -752,9 +791,10 @@ img {
     padding: 20px
   }
 
-  /*  
-  consertar imagem doações. faq titulo, titulos, menu 
-  */
+  .faca-parte-imagem {
+    grid-row: 2;
+    margin: 20px 0;
+  }
 
 }
 
