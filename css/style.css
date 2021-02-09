@@ -208,7 +208,6 @@ img {
 /* menu */
 .menu ul {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
 }
 
@@ -220,10 +219,11 @@ img {
   padding: 10px;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 }
 
 .menu ul li + li {
-  margin-left: 32px;
+  margin-left: 20px;
 }
 
 .menu ul li a img {
@@ -241,6 +241,7 @@ img {
   background: #FFF021;
   transition: all .4s;
   opacity: 0;
+  margin-top: -6px;
 }
 
 .menu ul li:hover:after, .menu ul li.menu-ativo:after {
@@ -748,7 +749,8 @@ img {
   .tecnologia-imagem,
   .doacoes-imagem,
   .faq-imagem,
-  .faca-parte-imagem {
+  .faca-parte-imagem,
+  .s-imagem {
     max-width: 300px;
   }
 
@@ -757,7 +759,9 @@ img {
   .tecnologia,
   .doacoes,
   .faq,
-  .faca-parte {
+  .faca-parte,
+  .sobre-gd,
+  .recrutamento {
     padding: 60px 20px;
   }
 
@@ -796,6 +800,10 @@ img {
     margin: 20px 0;
   }
 
+  .redes-sociais.redes-header {
+    display: none;
+  }
+
 }
 
 @media (max-width: 817px) {
@@ -805,10 +813,6 @@ img {
 }
 
 @media (max-width: 680px) {
-  .redes-sociais.redes-header {
-    display: none;
-  }
-
   .menu ul li + li {
     margin-left: 16px;
   }
@@ -837,6 +841,10 @@ img {
 }
 
 @media (max-width: 543px) {
+  .menu {
+    flex-direction: column;
+  }
+
   .faq-pergunta {
     font-size: 1rem;
   }
@@ -868,6 +876,12 @@ img {
   }
 }
 
+@media (max-width: 466px) {
+  .intro, .vazio {
+    padding-top: 120px;
+  }
+}
+
 /* ANIMAÇÕES */
 [data-menu="header-bg"].animate {
   background: rgb(87,13,255);
@@ -875,7 +889,7 @@ img {
 }
 
 [data-menu="header"].animate {
-  padding: 0;
+  padding: 2px;
 }
 
 .logo {

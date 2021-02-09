@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 <title>Gaming Developers - Jogue, crie e faça comunidades</title>
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/facaparte.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -43,10 +44,7 @@
         <div class="intro-texto">
           <h1 class="titulo t-inicial">Forme um time conosco</h1>
           <h2 class="subtitulo-intro sub-intro-time">A Gaming Developers gostaria bastante de trabalhar com você, nos mostre seu talento e embarque com a gente nesta jornada!</h2>
-          <!-- https://www.figma.com/proto/JCeCquYLpiW4vihOgNepiJ/Gaming-Developers?node-id=187%3A2&scaling=min-zoom -->
-
-          <!-- https://www.figma.com/file/JCeCquYLpiW4vihOgNepiJ/Gaming-Developers?node-id=0%3A1 -->
-          <a href="#"><button class="botao-contribuir">Embarcar</button></a>
+          <a href="#sobre-gd"><button class="botao-contribuir">Embarcar</button></a>
         </div>
         <!-- intro imagem -->
         <figure class="intro-imagem">
@@ -55,7 +53,127 @@
       </div>
     </section>
 
+    <!-- sobre Gaming Developers -->
+    <section class="sobre-gd-bg" id="sobre-gd">
+      <div class="sobre-gd container">
+        <!-- título -->
+        <h2 class="titulo wide-item t-sobre-gd">Na Gaming Developers somos uma</h2>
+        <!-- articles sobre -->
+        <div class="sobre-articles">
+          <article class="s-article">
+            <!-- article imagem -->
+            <figure class="s-imagem">
+              <img src="assets/icons/foguete.svg" alt="Foguete decolando">
+            </figure>
+            <!-- article texto -->
+            <h3 class="subtitulo-intro sub-sobre-gd">Startup em desenvolvimento</h3>
+          </article>
 
+          <article class="s-article">
+            <!-- article imagem -->
+            <figure class="s-imagem">
+              <img src="assets/icons/jogador.svg" alt="Garoto jogando vídeo game">
+            </figure>
+            <!-- article texto -->
+            <h3 class="subtitulo-intro sub-sobre-gd">Buscando apaixonados por jogos</h3>
+          </article>
+
+          <article class="s-article">
+            <!-- article imagem -->
+            <figure class="s-imagem">
+              <img src="assets/icons/trabalhadora.svg" alt="Mulher trabalhando usando um notebook">
+            </figure>
+            <!-- article texto -->
+            <h3 class="subtitulo-intro sub-sobre-gd">Dispostos a dar o melhor de si</h3>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- recrutamento -->
+    <section class="recrutamento-bg">
+      <div class="recrutamento container">
+        <!-- formulário -->
+        <div class="formulario-recrutamento">
+          <h2 class="titulo t-form-recrutamento">Formulário de recrutamento</h2>
+          <form class="form-recrutamento">
+            <label for="nome" class="label">Nome</label>
+            <input type="text" id="nome" class="input r-input">
+            <label for="e-mail" class="label">E-mail</label>
+            <input type="text" id="e-mail" class="input r-input">
+            <label for="cargo" class="label">Cargo</label>
+            <input type="text" id="cargo" class="input r-input">
+            <label for="mensagem" class="label">Mensagem (fale um pouco sobre você)</label>
+            <textarea class="textarea r-textarea" id="mensagem" rows="8"></textarea>
+
+            <div class="btn-acoes">
+              <button class="botao-contribuir btn-enviar">Enviar</button>
+              <span class="botao-contribuir btn-cancelar" id="btn-cancelar">Cancelar</span>
+            </div>
+          </form>
+        </div>
+
+        <!-- infomações -->
+        <div class="informacoes-recrutamento">
+          <h3 class="titulo t-footer">Recrutamento de pessoas</h3>
+          <p class="paragrafo p-info-recrutamento">O processo de recrutamento e seleção da Gaming Developers é certamente a parte mais importante da empresa, uma vez que os candidatos qualificados e capazes de ocupar cargos serão partes de uma empresa em crescimento, que é sujeita a mudanças e reestruturações.</p>
+
+          <h3 class="titulo t-footer">Cargos sugeridos</h3>
+          <div class="lista-cargos">
+            <ul>
+              <li>Desenvolvedor(a) de jogos</li>
+              <li>Animador(a)</li>
+              <li>Roteirista</li>
+              <li>Artista conceitual</li>
+              <li>Designer de jogos</li>
+              <li>Ilustrador(a)</li>
+              <li>Marketing Digital</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- perguntas frequentes -->
+    <section class="faq-bg">
+      <div class="faq container">
+         <!-- faq imagem -->
+         <figure class="faq-imagem">
+          <img src="assets/icons/faq-icon.svg" alt="Homem e mulher junto a um ponto de interrogação">
+        </figure>
+        <!-- faq texto -->
+        <h2 class="titulo wide-item t-faq">Perguntas Frequentes</h2>
+        <div class="faq-texto">
+          <!-- pergunta 1 -->
+          <div class="faq-container">
+            <input type="checkbox" id="pergunta1" name="perguntas" class="faq-checkbox">
+            <label for="pergunta1">
+              <div class="faq-pergunta">Como irei saber sobre as atualizações dos jogos? <img class="faq-seta" src="assets/faq-seta.svg"></div>
+            </label>
+            <div class="faq-resposta"><p>Fique ligado na nossa plataforma, logo estaremos informando.</p></div>
+          </div>
+          
+          <!-- pergunta 2 -->
+          <div class="faq-container">
+            <input type="checkbox" id="pergunta2" name="perguntas" class="faq-checkbox">
+            <label for="pergunta2">
+              <div class="faq-pergunta">Vocês ensinam a desenvolver jogos? <img class="faq-seta" src="assets/faq-seta.svg"></div>
+            </label>
+            <div class="faq-resposta"><p>No momento não, mas futuramente podemos pensar nisso.</p></div>
+          </div>
+
+          <!-- pergunta 3 -->
+          <div class="faq-container">
+            <input type="checkbox" id="pergunta3" name="perguntas" class="faq-checkbox">
+            <label for="pergunta3">
+              <div class="faq-pergunta">Tenho uma ideia de jogo, como faço para recrutar a equipe da Gaming Developers? <img class="faq-seta" src="assets/faq-seta.svg"></div>
+            </label>
+            <div class="faq-resposta"><p>Através de nosso e-mail ou outros meios de contato.</p></div>
+          </div>
+        </div>  
+      </div>
+    </section>
+    
   </main>
 
   <!-- footer -->

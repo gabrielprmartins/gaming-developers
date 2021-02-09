@@ -1,0 +1,137 @@
+/* Estrutura */
+/* intro */
+.intro-time-bg {
+  background: #4400CC;
+}
+
+.sub-intro-time {
+  max-width: 450px;
+}
+
+/* sobre Gaming Developers */
+.sobre-gd-bg {
+  background: #5511EE;
+}
+
+.sobre-gd {
+  padding: 148px 20px;
+}
+
+.t-sobre-gd {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.sub-sobre-gd {
+  text-align: center;
+  max-width: 230px;
+}
+
+.sobre-articles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
+  grid-gap: 32px;
+  align-items: baseline;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.s-article {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+
+/* recrutamento */
+.recrutamento-bg {
+  background: #6622FF;
+}
+
+.recrutamento {
+  padding: 148px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 32px;
+  justify-items: center;
+  align-items: center;
+}
+
+.t-form-recrutamento {
+  font-size: 2.375rem;
+}
+
+.form-recrutamento {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
+}
+
+.r-input, .r-textarea {
+  border-color: #4400CC;
+}
+
+.r-input:hover, .r-input:focus,
+.r-textarea:hover, .r-textarea:focus {
+  border-color: #FFF021;
+  box-shadow: none;
+}
+
+.label {
+  margin: 16px 0 8px;
+}
+
+.btn-acoes {
+  margin-top: 32px;
+}
+
+.p-info-recrutamento {
+  max-width: 500px;
+}
+
+.lista-cargos {
+  max-width: 500px;
+}
+
+.lista-cargos ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.lista-cargos ul li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.125rem;
+  color: #FFF;
+  font-weight: 400;
+  background: #837DFF;
+  border-radius: 4px;
+  padding: 6px;
+  margin: 4px;
+}
+
+/* Responsivo */
+@media (max-width: 893px) {
+  .sobre-gd, .recrutamento {
+    padding: 30px 20px;
+  }
+
+  .s-imagem {
+    max-width: 200px;
+  }
+
+  .recrutamento {
+    grid-template-columns: 1fr;
+  }
+
+  .lista-cargos ul li {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .lista-cargos ul li {
+    font-size: 0.9rem;
+  }
+}
