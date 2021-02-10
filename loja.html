@@ -21,6 +21,8 @@
       <a href="index.html" class="logo"><img src="assets/gd-icons/logo.png" alt="Logo da Gaming Developers"></a>
       <!-- menu -->
       <nav class="menu">
+        <input type="checkbox" class="check-menu" name="check" id="check-menu">
+        <label for="check-menu" data-menuToggle="button" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></label>
         <ul>
           <li><a href="index.html"><img src="assets/menu/pagina-inicial.svg"> Home</a></li>
           <li><a href="facaparte.html"><img src="assets/menu/time-menu.svg"> Faça parte</a></li>
@@ -38,7 +40,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="body-item">
     <!-- vazio -->
     <section class="vazio-bg">
       <div class="vazio container">
@@ -53,7 +55,7 @@
   </main>
 
   <!-- footer -->
-  <section class="info-footer-bg">
+  <section class="info-footer-bg body-item">
     <div class="info-footer container">
       <!-- contato -->
       <div class="contato-footer item-footer">
@@ -89,7 +91,7 @@
       </figure>
     </div>
   </section>
-  <footer class="footer-bg">
+  <footer class="footer-bg body-item">
     <div class="footer container">
       <p class="paragrafo p-footer">&copy; Copyright 2021 Gaming Developers - Todos direitos reservados</p>
     </div>

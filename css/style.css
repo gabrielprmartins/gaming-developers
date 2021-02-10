@@ -253,6 +253,110 @@ img {
   filter: sepia(100%) saturate(1370%) hue-rotate(333deg) brightness(106%) contrast(105%);
 }
 
+/* menu hambúrguer */
+[data-menuToggle="button"] {
+  display: none;
+}
+
+.check-menu {
+  display: none;
+}
+
+@media (max-width: 893px) {
+  [data-menuToggle="button"] {
+    display: block;
+    width: 35px;
+    height: 35px;
+    background: #FFF021;
+    border: none;
+    border-radius: 4px;
+    margin: 0 20px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: ease .4s;
+  }
+
+  [data-menuToggle="button"]:hover {
+    background: #834DFF;
+  }
+
+  [data-menuToggle="button"] span {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgb(87,13,255);
+    width: 20px;
+    height: 3px;
+    border-radius: 1px;
+    transition: all .2s;
+    transition: ease .4s;
+  }
+
+  [data-menuToggle="button"]:hover span {
+    background: #FFF021;
+  }
+
+  [data-menuToggle="button"] span:nth-child(1) {
+    top: 10px;
+  }
+
+  [data-menuToggle="button"] span:nth-child(2) {
+    top: 22px;
+  }
+
+  .check-menu:checked ~ [data-menuToggle="button"] span:nth-child(3) {
+    opacity: 0;
+  }
+
+  .check-menu:checked ~ [data-menuToggle="button"] span:nth-child(1) {
+    top: 16px;
+    transform: rotate(45deg);
+  }
+
+  .check-menu:checked ~ [data-menuToggle="button"] span:nth-child(2) {
+    top: 16px;
+    transform: rotate(135deg);
+  }
+
+  .menu ul {
+    display: none;
+  }
+
+  @keyframes menuToggle {
+    from {
+      opacity: 0;
+      transform: translate3d(0,-20px,0);
+    }
+
+    do {
+      opacity: 1;
+      transform: translate3d(0,0,0);
+    }
+  }
+
+  .check-menu:checked ~ ul {
+    position: absolute;
+    display: block;
+    background: rgb(87,1,250);
+    width: 260px;
+    right: 0;
+    top: 100%;
+    padding: 10px 20px;
+    box-shadow: 3px 3px 3px rgba(0,0,0,.1);
+    animation: menuToggle .3s;
+  }
+
+  .menu ul li + li {
+    margin-left: 0;
+    margin-top: 8px;
+  }
+  
+}
+
 
 
 /* Intro */
@@ -813,10 +917,6 @@ img {
 }
 
 @media (max-width: 680px) {
-  .menu ul li + li {
-    margin-left: 16px;
-  }
-
   .menu ul li a {
     font-size: 1rem;
   }
@@ -880,7 +980,6 @@ img {
   .intro, .vazio {
     padding-top: 120px;
   }
-  /* fazer menu hambúrguer */
 }
 
 /* ANIMAÇÕES */

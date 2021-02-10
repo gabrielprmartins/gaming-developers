@@ -42,6 +42,16 @@ function menuAnime() {
   })
 }
 
+// Menu mobile (outside click)
+const menuButton = document.querySelector('.check-menu');
+const body = document.querySelectorAll('.body-item');
+
+for(let i = 0; i < body.length; i++) {
+  body[i].addEventListener('click', function() {
+    menuButton.checked = false;
+  })
+}
+
 // executar funções de animação
 if(target.length || targetMenu.length) {
   window.addEventListener('scroll', debounce(function() {
