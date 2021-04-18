@@ -14,7 +14,7 @@
 
 ---
 
-Clique [aqui](https://gamingdevelopers.ga) para acessar o site.
+Clique [aqui](https://gabriuda.github.io/GamingDevelopers/) para acessar o site.
 
 Design feito no Figma: [aqui](https://www.figma.com/file/JCeCquYLpiW4vihOgNepiJ/Gaming-Developers?node-id=0%3A1)
 
